@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "OneHealth",
+    "slug": "onehealth",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iban.onehealth"
+    },
+    "android": {
+      "package": "com.iban.onehealth"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Allow OneHealth to access your motion data to show your daily step count."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff"
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
